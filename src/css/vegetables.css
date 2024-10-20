@@ -1,8 +1,9 @@
 /* Основні стилі для мобільних пристроїв (до 768px) */
 .section-vegetables {
-    background: #692b43;
+    background-color: #692b43;
     padding-top: 80px;
     padding-bottom: 80px;
+    margin: 0 auto;
 }
 
 .div-vegetables {
@@ -83,7 +84,7 @@
 @media screen and (min-width: 768px) {
     .section-vegetables {
         padding: 100px 0px;
-        width: 768px;
+        width: 100%;
         height: 1661px;
     }
 
@@ -130,7 +131,6 @@
 /* Десктопна верстка (від 1280px і більше) */
 @media screen and (min-width: 1280px) {
     .section-vegetables {
-        width: 1280px;
         height: 1229px;
     }
 
