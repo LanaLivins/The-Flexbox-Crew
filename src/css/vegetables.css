@@ -1,134 +1,149 @@
 /* Основні стилі для мобільних пристроїв (до 768px) */
 .section-vegetables {
-  background: #692b43;
-  padding-top: 80px;
-  padding-bottom: 80px;
+    background: #692b43;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
+
 .div-vegetables {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
 }
+
 .h2-title-vegetables {
-  font-family: 'Inter Tight', sans-serif;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 1.04167;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-  color: #fbfbfb;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.04;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
 }
 
 .h2-vegetables-span {
-  color: rgba(251, 251, 251, 0.3);
+    color: rgba(251, 251, 251, 0.3);
 }
 
 .p-vegetables {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.28571;
-  color: #fbfbfb;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28;
+    color: #fbfbfb;
 }
 
 .vegetables-grid {
-display: flex;
+    display: flex;
     justify-content: center;
 }
 
 .ul-card-vegetables {
     list-style: none;
-        display: grid;
-        grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
 }
 
 .li-card-vegetables {
-  border-radius: 40px;
-  padding: 32px 26px;
-  width: 334px;
-  height: 379px;
-  background: #fbfbfb;
-  margin-bottom: 20px;
+    border-radius: 40px;
+    padding: 32px 26px;
+    width: 334px;
+    height: 379px;
+    background: #fbfbfb;
 }
 
 .h3-card-vegetables {
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 1;
-  letter-spacing: -0.01em;
-  color: #7a3145;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    color: #7a3145;
+    margin-bottom: 12px;
 }
 
 .p-card-vegetables {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.28571;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-  color: #141414;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #141414;
+    margin-bottom: 14px;
 }
 
 .img-card-vegetables {
-  width: 282px;
-  height: 243px;
+    width: 282px;
+    height: 243px;
 }
-@media screen and (max-width: 767px) {
-}
+
+@media screen and (max-width: 767px) {}
 
 /* Планшетна верстка (від 768px до 1279px) */
 @media screen and (min-width: 768px) {
-.section-vegetables {
-    padding: 100px 32px;
-    width: 768px;
-    height: 1661px;
-  }
+    .section-vegetables {
+        padding: 100px 0px;
+        width: 768px;
+        height: 1661px;
+    }
 
-  .h2-title-vegetables {
+    .div-vegetables {
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+
+    .h2-title-vegetables {
         font-size: 64px;
         line-height: 1;
-  }
+    }
 
-  .p-vegetables {
+    .p-vegetables {
         font-size: 16px;
         line-height: 1.25;
-  }
+        width: 626px;
+    }
 
-  .ul-card-vegetables {
-list-style: none;
-    display: grid;
-    grid-template-columns: 2fr;
-  }
-.li-card-vegetables {
-    padding: 32px 30px;
-    width: 342px;
-  }
-.h3-card-vegetables {
-    font-size: 32px;
-    line-height: 1;
-  }
-  @media screen and (max-width: 1279px) {
-  }
+    .ul-card-vegetables {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 28px;
+        column-gap: 20px;
+    }
+
+    .li-card-vegetables {
+        padding: 32px 30px;
+        width: 342px;
+    }
+
+    .h3-card-vegetables {
+        font-size: 32px;
+    }
+
+    .p-card-vegetables {
+        margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 1279px) {}
 }
+
 /* Десктопна верстка (від 1280px і більше) */
 @media screen and (min-width: 1280px) {
-   {
-  }
+    .section-vegetables {
+        width: 1280px;
+        height: 1229px;
+    }
 
-  .h2-title-vegetables {
-  }
+    .div-vegetables {
+        gap: 25px;
+    }
 
-  .p-vegetables {
-  }
+    .ul-card-vegetables {
+        column-gap: 21px;
+    }
 
-  .ul-card-vegetables {
-  }
-
-  .img-card-vegetables {
-  }
-
-  .li-card-vegetables {
-  }
-
-  .h3-card-vegetables {
-  }
+    .li-card-vegetables {
+        padding: 32px 32px;
+        width: 346px;
+    }
 }
