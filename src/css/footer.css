@@ -5,7 +5,6 @@
     font-family: "Inter Tight", sans-serif;
 }
 
-
 .footer-container {
     display: flex;
     flex-direction: column;
@@ -86,7 +85,6 @@
     display: block;
     padding-right: 36px;
 }
-
 
 .privacy-policy {
     display: flex;
