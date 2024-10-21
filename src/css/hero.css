@@ -10,6 +10,9 @@
     background-color: #576f35;
     height: 812px;
 }
+.container {
+    margin: 0;
+}
 
 .hero-text-container {
     margin-bottom: 40px;
