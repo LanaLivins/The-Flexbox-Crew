@@ -1,17 +1,23 @@
 <section class="reviews-section">
   <div class="container">
     <div class="revievs-text-container">
-      <h1 class="reviews-title">
+      <h2 class="reviews-title">
         reviews from our <span class="reviews-span">customers</span>
-      </h1>
+      </h2>
       <p class="reviews-description">
         Words of our customers: impressions and opinions about the quality of
         our services and the freshness of our products.
       </p>
     </div>
-    <div class="reviews-opinion-container">
-      <ul class="opinion-list">
-        <li class="opinion-item">
+    
+    <div class="slider">
+      
+      <div class="reviews-opinion-container">
+        <input type="radio" name="r" id="r1" checked />
+          <input type="radio" name="r" id="r2" />
+          <input type="radio" name="r" id="r3" />
+      <ul class="opinion-list ">
+        <li class="opinion-item s1" >
           <img
             class="opinion-user-img"
             srcset="/img/reviews/john-wax@2x.webp 2x"
@@ -25,7 +31,7 @@
             enchanting. I advise every fan of real products!
           </p>
         </li>
-        <li class="opinion-item">
+        <li class="opinion-item s2">
           <img
             class="opinion-user-img"
             srcset="/img/reviews/victoria-romashenko@2x.webp 2x"
@@ -39,7 +45,7 @@
             quality is impeccable!
           </p>
         </li>
-        <li class="opinion-item">
+        <li class="opinion-item s3">
           <img
             class="opinion-user-img"
             srcset="/img/reviews/ihor-trachuk@2x.webp 2x"
@@ -54,6 +60,16 @@
           </p>
         </li>
       </ul>
+    </div>
+        
+          
+        
+        <div class="navigation">
+          <label for="r1" class="bar"></label>
+          <label for="r2" class="bar"></label>
+          <label for="r3" class="bar"></label>
+        </div>
+      </div>
     </div>
   </div>
 </section>
