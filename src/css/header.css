@@ -2,8 +2,8 @@
 width: 100%;
 position: absolute;
 top: 20px;
-background-color:blueviolet;
-z-index: 88888;
+background-color:transparent;
+z-index:55555;
 }
 
 .header-container{
