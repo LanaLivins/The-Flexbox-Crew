@@ -1,11 +1,5 @@
 /* #region advertisement */
 
-.container {
-  min-width: 320px;
-  max-width: 375px;
-  margin: 0 auto;
-}
-
 .container-advertisement {
   position: relative;
   padding: 80px 10px;
