@@ -4,6 +4,8 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 0px;
+  align-items: stretch;
+  align-content: stretch;
 }
 
 .div-img {
@@ -19,6 +21,7 @@
   min-height: 530px;
   align-items: stretch;
   overflow: hidden;
+  align-content: stretch;
 }
 
 .img {
@@ -27,6 +30,7 @@
   min-height: 450px;
   align-items: stretch;
   overflow: hidden;
+  align-content: stretch;
 }
 
 .div-content {
@@ -39,6 +43,8 @@
   padding: 80px 20px;
   min-width: 375px;
   min-height: 654px;
+  align-items: stretch;
+  align-content: stretch;
 }
 
 .title-How-it-works {
@@ -49,6 +55,8 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
+  align-items: stretch;
+  align-content: stretch;
 }
 
 .color-rgda {
@@ -68,10 +76,20 @@
   border-radius: 15px;
   padding: 12px 27px 12px 24px;
   background-color: #fbfbfb;
-  margin-left: auto;
-  margin-right: auto;
+
   width: 335px;
   height: 76px;
+  /*
+    margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -147,15 +165,16 @@
   content: counters(section, '1.2.3') '';
   width: 52px;
   height: 52px;
-  border-radius: 50px;
+  border-radius: 100%;
   background-color: #7a3145;
-  border: 10px solid rgba(122, 49, 69, 0.3);
+  border: 10px; /*solid rgba(122, 49, 69, 0.3);*/
   font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 1;
   letter-spacing: -0.02em;
   color: #fbfbfb;
+  border-color: #141414;
 }
 
 .list-tex {
