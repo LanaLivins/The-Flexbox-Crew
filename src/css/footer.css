@@ -44,6 +44,11 @@
     margin-bottom: auto;
 }
 
+.footer-nav ul li {
+    display: block;
+}
+
+
 .footer-nav-list {
     display: flex;
     flex-direction: column;
