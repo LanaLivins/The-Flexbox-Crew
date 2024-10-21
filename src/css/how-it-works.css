@@ -4,7 +4,6 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 0px;
-  align-items: stretch;
   align-content: stretch;
 }
 
@@ -165,9 +164,9 @@
   content: counters(section, '1.2.3') '';
   width: 52px;
   height: 52px;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #7a3145;
-  border: 10px; /*solid rgba(122, 49, 69, 0.3);*/
+  border: 10px solid rgba(122, 49, 69, 0.3);
   font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -177,7 +176,7 @@
   border-color: #141414;
 }
 
-.list-tex {
+.list-text {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 12px;
