@@ -19,3 +19,8 @@
 @import url('./your-order.css');
 @import url('./footer.css');
 @import url('./modal.css');
+
+/*   Додати щоб скролл був повільний */
+html {
+  scroll-behavior: smooth;
+}
