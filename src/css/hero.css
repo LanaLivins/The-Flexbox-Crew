@@ -11,7 +11,7 @@
   height: 812px;
 }
 .container {
-    margin: 0;
+  margin: 0px;
 }
 
 .hero-text-container {
@@ -64,6 +64,9 @@
     height: 1024px;
     padding: 122px 0 0 0;
   }
+  .container {
+    margin: 0px;
+  }
   .hero-text-container {
     margin-bottom: 50px;
   }
@@ -102,6 +105,10 @@
     align-items: flex-start;
     height: 800px;
     gap: 28px;
+  }
+  .container {
+    padding: 0 0 0 100px;
+    margin: 0px;
   }
 
   .hero-text-container {
