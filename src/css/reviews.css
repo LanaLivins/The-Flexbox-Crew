@@ -32,8 +32,7 @@
   line-height: 1.29;
   color: #141414;
 }
-.reviews-opinion-container {
-}
+
 .opinion-list {
   width: 300%;
   display: flex;
@@ -44,7 +43,10 @@
   flex-direction: column;
   border: 1px solid rgba(122, 49, 69, 0.3);
   border-radius: 24px;
-  padding: 20px 16px;
+  padding-top: 20px;
+  padding-bottom: 38px;
+  padding-left: 16px;
+  padding-right: 16px;
   width: 100%;
   align-items: center;
   justify-content: start;
@@ -53,6 +55,8 @@
 .opinion-user-img {
   margin-bottom: 24px;
   border-radius: 50%;
+  width: 56px;
+  height: 56px;
 }
 .opinion-user-title {
   margin-bottom: 8px;
@@ -65,12 +69,13 @@
   color: #040306;
 }
 .opinion-text {
-  max-width: 288px;
+  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 1.28571;
   text-align: center;
   color: rgba(4, 3, 6, 0.4);
+  max-width: 288px;
 }
 /*#endregion Slide*/
 /*#region Nav*/
@@ -161,6 +166,7 @@ input[name='r'] {
   }
   .opinion-item {
     width: calc((100% - 18px) / 2);
+    padding: 20px;
   }
   .opinion-user-title {
     font-size: 18px;
@@ -203,11 +209,6 @@ input[name='r'] {
   /*#endregion Nav*/
 }
 
-@media screen and (max-width: 1279px) {
-  /* .reviews-section ul li:nth-child(n + 3) {
-    display: none;
-  } */
-}
 /* #endregion Styles for Tablet devices */
 
 /* #region Styles for Desktop devices */
@@ -226,6 +227,16 @@ input[name='r'] {
   }
   .navigation-reviews {
     display: none;
+  }
+  .opinion-user-title {
+    font-size: 18px;
+    line-height: 1.1;
+    color: #141414;
+  }
+  .opinion-text {
+    font-size: 16px;
+    line-height: 1.4;
+    color: rgba(20, 20, 20, 0.4);
   }
 }
 
