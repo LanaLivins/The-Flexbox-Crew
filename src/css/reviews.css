@@ -52,6 +52,7 @@
 
 .opinion-user-img {
   margin-bottom: 24px;
+  border-radius: 50%;
 }
 .opinion-user-title {
   margin-bottom: 8px;
@@ -64,6 +65,7 @@
   color: #040306;
 }
 .opinion-text {
+  max-width: 288px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28;
@@ -76,7 +78,7 @@
   width: 100%;
   overflow: hidden;
 }
-.navigation {
+.navigation-reviews {
   display: flex;
   justify-content: center;
   padding: 8px 0;
@@ -93,7 +95,8 @@
   transition: all 0.4s ease;
 }
 
-.bar:hover {
+.bar:hover,
+.bar:focus {
   opacity: 0.5;
   transform: scale(1.2);
 }
@@ -188,7 +191,7 @@ input[name='r'] {
     transform: translateX(-25.65%);
   }
 
-  .navigation label[for='r3'] {
+  .navigation-reviews label[for='r3'] {
     display: none;
   }
 
@@ -220,6 +223,9 @@ input[name='r'] {
   }
   input[name='r'] {
     display: none; /* приховати радіо-кнопки */
+  }
+  .navigation-reviews {
+    display: none;
   }
 }
 
