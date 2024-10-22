@@ -83,6 +83,14 @@ color: #7A3145;
             display: flex;
 }
 
+.form-input:valid {
+    border: 1px solid green;
+}
+
+input:focus:invalid {
+    border: 1px solid red;
+}
+
 
 .form-input::placeholder {
     font-weight: 500;
@@ -296,16 +304,6 @@ font-weight: 500;
     display: flex;
         justify-content: space-between;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 }
