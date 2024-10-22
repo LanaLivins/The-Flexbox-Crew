@@ -138,17 +138,17 @@ border: 1px solid rgba(20, 20, 20, 0.2);
 
 /* Картинка */
 
-.your_order_image {
+.your_order_picture {
     background-color: #576F35;
     border-radius: 30px;
 }
 
-.lalalala {
+.box_of_picture {
     border: none;
         padding: 40px 20px;
 }
 
-.textoflinks {
+.text_of_links {
 font-weight: 600;
 font-size: 14px;
 line-height: 1.28571;
@@ -177,10 +177,16 @@ padding-bottom: 14px;
         padding-left: 8px;
 }
 
-.spissokk {
+.media_list {
     display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+}
+
+.picture_of_order {
+    border-radius: 15px;
+    width: 295px;
+        height: 273px;
 }
 
 
@@ -244,16 +250,21 @@ font-weight: 500;
 
 /*  Картинка */
 
-.lalalala {
+.picture_of_order {
+width: 528px;
+}
+
+
+.box_of_picture {
     padding: 50px 50px;
 }
 
-.your_order_image {
+.your_order_picture {
     width: 628px;
         margin: 0 auto;
 }
 
-.textoflinks {
+.text_of_links {
     padding-top: 50px;
         padding-bottom: 15px;
         font-size: 18px;
@@ -294,7 +305,7 @@ font-weight: 500;
     margin: 0;
 }
 
-.your_order_image {
+.your_order_picture {
     width: 527px;
     margin: 0;
 }
@@ -303,6 +314,10 @@ font-weight: 500;
 .ogromniyconteiner {
     display: flex;
         justify-content: space-between;
+}
+
+.picture_of_order {
+    width: 427px;
 }
 
 
