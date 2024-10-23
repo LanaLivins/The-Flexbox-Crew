@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .hero-text-container {
@@ -83,24 +84,16 @@
   }
 
   .hero-title {
-    font-weight: 600;
     font-size: 76px;
-    line-height: 1;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #fbfbfb;
   }
 
   .hero-text {
-    font-weight: 500;
     font-size: 16px;
     line-height: 1.25;
-    color: #fbfbfb;
   }
 
   .hero-img-container {
     height: 539px;
-    width: 100%;
     background-image: linear-gradient(rgba(20, 20, 20, 0.2),
         rgba(20, 20, 20, 0.2)),
       url(/img/hero/tablet/image_1x.jpg);
@@ -117,7 +110,6 @@
 
 @media screen and (min-width: 1280px) {
   .hero {
-    width: 100%;
   }
 
   .hero-container {
@@ -125,17 +117,8 @@
   }
 
   .hero-text-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #576f35;
-    width: 100vw;
-  }
-
-  .hero-text-container {
     padding-left: 100px;
     padding-right: 28px;
-    padding-bottom: 50px;
     padding-top: 238px;
   }
 
@@ -145,22 +128,7 @@
   }
 
   .hero-title {
-    font-weight: 600;
     font-size: 76px;
-    line-height: 1;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-  }
-
-  .hero-text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
-  }
-
-  .bg-container {
-    display: flex;
-    width: 100%;
   }
 
   .hero-img-container {
@@ -170,22 +138,15 @@
         rgba(20, 20, 20, 0.2)),
       url(/img/hero/desktop/image_1x.jpg);
   }
-
   @media (min-resolution: 192dpi) {
     .hero-img-container {
       background-image: linear-gradient(rgba(20, 20, 20, 0.2),
-          rgba(20, 20, 20, 0.2)),
-        url(/img/hero/mobile/image_2x.jpg);
+        rgba(20, 20, 20, 0.2)),
+      url(/img/hero/desktop/image_2x.jpg);
     }
   }
 }
 
-@media screen and (min-width: 1280px) and (min-resolution: 192dpi) {
-  .hero-img-container {
-    background-image: linear-gradient(rgba(20, 20, 20, 0.2),
-        rgba(20, 20, 20, 0.2)),
-      url(/img/hero/desktop/image_2x.jpg);
-  }
-}
+
 
 /* #endregion hero */
