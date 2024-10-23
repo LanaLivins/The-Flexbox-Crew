@@ -1,11 +1,13 @@
 /* #region advertisement */
-
+.advertisement {
+  background: #fbfbfb;
+}
 .container-advertisement {
   position: relative;
   padding: 80px 10px;
   background: #fbfbfb;
-  z-index: -999;
-  max-width: 355px;
+  z-index: 999;
+  width: 100%;
 }
 
 .visually-hidden {
@@ -23,9 +25,11 @@
 }
 
 .container-advertisement-background {
+  box-sizing: border-box;
   position: absolute;
   border-radius: 12px;
-  width: 100%;
+  width: calc(100% - 16px); /* Ширина з урахуванням відступів */
+  max-width: 355px; /* Максимальна ширина */
   height: 102px;
   background: #576f35;
   z-index: -1;
@@ -54,17 +58,14 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
   .container-advertisement {
     padding: 100px 16px;
   }
 
   .container-advertisement-background {
     border-radius: 12px;
-    width: 736px;
+    width: calc(100% - 16px); /* Ширина з урахуванням відступів */
+    max-width: 736px; /* Максимальна ширина */
     height: 86px;
   }
 
@@ -78,16 +79,14 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-
   .container-advertisement {
     padding: 100px;
   }
 
   .container-advertisement-background {
-    width: 808px;
+    width: calc(100% - 16px); /* Ширина з урахуванням відступів */
+    max-width: 808px; /* Максимальна ширина */
+
     height: 86px;
   }
 
