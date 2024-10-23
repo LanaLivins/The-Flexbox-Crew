@@ -5,6 +5,7 @@
   padding: 80px 10px;
   background: #fbfbfb;
   z-index: -999;
+  max-width: 355px;
 }
 
 .visually-hidden {
@@ -44,10 +45,12 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
+  width: 100%;
 }
 
 .text-advertisement-span {
   color: #141414;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
