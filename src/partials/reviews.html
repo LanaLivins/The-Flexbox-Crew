@@ -1,22 +1,29 @@
-<section class="reviews-section">
+<section class="reviews-section" id="section_revievs" >
   <div class="container">
     <div class="revievs-text-container">
-      <h1 class="reviews-title">
+      <h2 class="reviews-title">
         reviews from our <span class="reviews-span">customers</span>
-      </h1>
+      </h2>
       <p class="reviews-description">
         Words of our customers: impressions and opinions about the quality of
         our services and the freshness of our products.
       </p>
     </div>
-    <div class="reviews-opinion-container">
-      <ul class="opinion-list">
-        <li class="opinion-item">
+    
+    <div class="slider">
+      
+      <div class="reviews-opinion-container">
+        <input type="radio" name="r" id="r1" checked />
+          <input type="radio" name="r" id="r2" />
+          <input type="radio" name="r" id="r3" />
+      <ul class="opinion-list ">
+        <li class="opinion-item" >
           <img
             class="opinion-user-img"
             srcset="/img/reviews/john-wax@2x.webp 2x"
             src="/img/reviews/john-wax.webp"
             alt="image-John-Wax"
+            
           />
           <h3 class="opinion-user-title">John Wax</h3>
           <p class="opinion-text">
@@ -54,6 +61,16 @@
           </p>
         </li>
       </ul>
+    </div>
+        
+          
+        
+        <div class="navigation-reviews">
+          <label for="r1" class="bar"></label>
+          <label for="r2" class="bar"></label>
+          <label for="r3" class="bar"></label>
+        </div>
+      </div>
     </div>
   </div>
 </section>

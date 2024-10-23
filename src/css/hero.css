@@ -42,6 +42,7 @@
   font-size: 14px;
   line-height: 1.28;
   color: #fbfbfb;
+  margin-bottom: 40px;
 }
 
 .bg-container {
@@ -70,7 +71,6 @@
 
 @media screen and (min-width: 768px) {
   .hero {}
-
   .hero-text-container {
     padding-left: 32px;
     padding-right: 32px;

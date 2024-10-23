@@ -1,52 +1,39 @@
-.box-div {
+/*#region Mobile*/
+.How-it-works {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 0px;
-  align-items: stretch;
-  align-content: stretch;
+  justify-content: center;
+  padding: 0;
 }
-
+.box-div {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .div-img {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 10px;
+  justify-content: center;
   background-color: #7a3145;
   padding: 40px 20px;
-  max-width: 375px;
-  min-height: 530px;
-  align-items: stretch;
-  overflow: hidden;
-  align-content: stretch;
+  width: 100vw;
 }
-
 .img {
+  display: block;
   border-radius: 30px;
-  min-width: 335px;
-  min-height: 450px;
-  align-items: stretch;
-  overflow: hidden;
-  align-content: stretch;
+  max-width: 335px;
+  width: 100%;
 }
-
 .div-content {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #576f35;
   gap: 40px;
   padding: 80px 20px;
-  min-width: 375px;
-  min-height: 654px;
-  align-items: stretch;
-  align-content: stretch;
+  width: 100vw;
 }
-
 .title-How-it-works {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
@@ -55,14 +42,17 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
-  align-items: stretch;
-  align-content: stretch;
+  margin-bottom: 20px;
 }
-
+.divka {
+  max-width: 335px;
+}
+.hiw-list-container {
+  max-width: 335px;
+}
 .color-rgda {
   color: rgba(251, 251, 251, 0.3);
 }
-
 .text-How-it-works {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
@@ -71,132 +61,147 @@
   color: #fbfbfb;
   overflow: hidden;
 }
-
-.list-li {
-  border-radius: 15px;
-  padding: 12px 27px 12px 24px;
-  background-color: #fbfbfb;
-
-  width: 335px;
-  height: 76px;
-  /*
-    margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: left;
-  align-items: center;*/
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 24px;
-}
-
-@media screen and (min-width: 768px) {
-  .div-img {
-    padding: 100px 64px;
-    min-width: 768px;
-    min-height: 840px;
-  }
-
-  .img {
-    min-width: 640px;
-    min-height: 640px;
-  }
-
-  .div-content {
-    flex-direction: row;
-    gap: 10px;
-    padding: 100px 159px;
-    min-width: 768px;
-    min-height: 699px;
-  }
-
-  .title-How-it-works {
-    font-size: 32px;
-  }
-
-  .text-How-it-works {
-    font-size: 16px;
-  }
-
-  .list-li {
-    width: 450px;
-    height: 76px;
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .box-div {
-    flex-direction: row;
-  }
-
-  .div-img {
-    padding: 100px 100px 160px 100px;
-    min-width: 650px;
-    min-height: 759px;
-  }
-
-  .img {
-    min-width: 430px;
-    min-height: 559px;
-  }
-
-  .div-content {
-    padding: 100px 100px 160px 100px;
-    min-width: 650px;
-    min-height: 759px;
-  }
-}
-
 .ol-How-it-works {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: column;
-  gap: 10px;
-  /**/
-  counter-reset: section;
-  list-style-type: none;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  counter-reset: step-counter;
 }
-
+.list-li {
+  position: relative;
+  display: flex;
+  gap: 24px;
+  background: #fbfbfb;
+  border-radius: 15px;
+  padding: 12px 27px 12px 24px;
+  max-width: 100%;
+  min-height: 76px;
+  padding-left: 100px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 25px;
+  align-items: center;
+}
 .list-li::before {
-  counter-increment: section;
-  content: counters(section, '1.2.3') '';
-  width: 52px;
-  height: 52px;
-  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  margin-left: 24px;
+  content: counter(step-counter);
+  counter-increment: step-counter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #7a3145;
-  border: 10px; /*solid rgba(122, 49, 69, 0.3);*/
+  border: 5px #d4c5c9 solid;
+  border-radius: 50%;
   font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 1;
   letter-spacing: -0.02em;
   color: #fbfbfb;
-  border-color: #141414;
 }
-
-.list-tex {
+.list-text {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: -0.02em;
   color: rgba(20, 20, 20, 0.6);
-  text-align: center;
 }
-
 .color-span-text {
   font-weight: 700;
   color: #141414;
 }
-
-.divka {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 50px;
-  max-width: 450px;
+/*#endregion Mobile*/
+/*#region Tablet*/
+@media screen and (min-width: 768px) {
+  .div-img {
+    padding: 100px 64px;
+  }
+  .img {
+    border-radius: 30px;
+    max-width: 640px;
+  }
+  .div-content {
+    gap: 50px;
+    padding: 100px 159px;
+  }
+  .title-How-it-works {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    margin-bottom: 20px;
+  }
+  .divka {
+    max-width: 450px;
+  }
+  .hiw-list-container {
+    max-width: 450px;
+  }
+  .text-How-it-works {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #fbfbfb;
+  }
+  .list-text {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    /* line-height: 20px; */
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: rgba(20, 20, 20, 0.6);
+  }
 }
+/*#endregion Tablet*/
+/*#region Desktop*/
+@media screen and (min-width: 1280px) {
+  .box-div {
+    flex-direction: row;
+  }
+  .div-img {
+    padding: 100px;
+    width: 100vw;
+  }
+  .img {
+    border-radius: 30px;
+    min-width: 430px;
+  }
+  .div-content {
+    gap: 50px;
+    padding-top: 100px;
+    padding-bottom: 160px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100vw;
+  }
+  .divka {
+    min-width: 450px;
+  }
+  .hiw-list-container {
+    min-width: none;
+    -width: 450px;
+  }
+  .title-How-it-works {
+    margin-bottom: 25px;
+  }
+  .text-How-it-works {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #fbfbfb;
+  }
+}
+/*#endregion Desktop*/
