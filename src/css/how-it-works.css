@@ -193,8 +193,7 @@
     min-width: 450px;
   }
   .hiw-list-container {
-    min-width: none;
-    -width: 450px;
+    width: 450px;
   }
   .title-How-it-works {
     margin-bottom: 25px;
