@@ -132,6 +132,9 @@
   .hero-title {
     font-size: 76px;
   }
+  .hero-text {
+    margin-bottom: 0;
+  }
 
   .hero-img-container {
     height: 800px;
